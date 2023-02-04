@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Link to website */
+/* https://cs1.ucc.ie/~ral1/assignment_2.html */
+
+/* Note - website content is aligned with 1920x1080 display resolution
+This is what is on my laptop whilst coding  */
+
+
+/* ucc logo floating to the left  */
+  img {
+    float: left;
+    padding: 20px 5px;
+  }
+/* creating the layout */
+  .container {
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+    display: table;
+    box-sizing: border-box;
+  }
+/* font formatting for paragraphs */
+  .emph {
+     font-style: italic;
+     font-size: 18px;
+     color: #006080;
+   }
+/* font and colour of background */
+   body {
+     font-family: Lucida Fax;
+     background-color:#ffaa80;
+   }
+/* nav bar indentation */
+  div.a {
+     text-indent: 4em;
+     padding-left: 250px;
+   }
+/* navigation formatting */
+  header nav {
+     overflow: hidden;
+     background-color: #ccddff;
+     position: fixed;
+     top: 0;
+     display: inline-block;
+  }
+
+/* formatting hover option and link to sections/fragments */
+  header nav a {
+     float: left;
+     display: block;
+     color: #333;
+     text-align: center;
+     padding: 10px 5px;
+     text-decoration: none;
+   }
+/* formatting hover control */
+  header nav a:hover {
+      background:#007399;
+      color: Black;
+  }
+/* formatting table head */
+  th {
+     text-align: center;
+     font-size: 18px;
+   }
+/* formatting heading */
+   h1 {
+   text-align: center;
+ }
+/* formatting table */
+   table {
+     margin-left:auto;
+     margin-right:auto;
+   }
+
+/* formatting of multiple sections */
+  #home {
+    padding-top: 50px;
+  }
+
+  #home h1 {
+    padding-right: 470px;
+  }
+
+  #home img {
+  width:330px;
+  height:auto;
+  }
+
+  #classtimetable {
+    padding-top: 10px;
+  }
+
+  #labtimetable {
+     padding-top: 50px;
+   }
+
+  #labtimetable h1 {
+    padding-right: 10px;
+  }
+/* created margin to go around photos, wanted the border to be bigger than picture to fit nicely */
+  #homephoto img {
+    float:center;
+    padding-left: 400px;
+    width: 600px;
+    border: 3px solid black;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 430px;
+  }
+
+  #homephoto h1 {
+    padding-top: 40px;
+    padding-right: 30px;
+  }
+
+  #homephoto p {
+    padding-top: 400px;
+    text-align: center;
+  }
+
+  #otherphoto img {
+    float:center;
+    padding-left: 400px;
+    width: 600px;
+    border: 3px solid black;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 430px;
+  }
+
+  #otherphoto h1 {
+    padding-top: 20px;
+    padding-right: 35px;
+  }
+
+  #otherphoto p {
+    padding-top: 490px;
+    text-align: center;
+}
+
+  </style>
+
+<title> Assignment2_Web_Development</title>
+
+</head>
+
+<body>
+<!-- This is where the titles in the navbar will go, set it in a container -->
+<header>
+  <div class="a">
+  <div class="container">
+    <nav>
+      <a href="#home">[Home]</a>
+      <a href="#classtimetable">[Class Timetable]</a>
+      <a href="#labtimetable">[Lab Timetable]</a>
+      <a href="#homephoto">[Home Photo]</a>
+      <a href="#otherphoto">[Other Photo]</a>
+    </nav>
+  </div>
+  </div>
+</header>
+
+<!-- created section ids -->
+<!-- formatting style of writing with emph -->
+<section id ="home">
+  <div class="container">
+
+    <br><img src="img_ucc.png" alt="UCC Logo" hspace="50">
+    <h1>Introduction</h1>
+    <span class ="emph">
+        My name is Rachel, I am a student of University College Cork.<br>
+        I am in the Psychology and Computer Science programs and learning alot of new things!
+        It is a positive challenge.<br>University College Cork is great to be around in Autumn when the leaves
+        start to fall as it reminds me of Hogwarts!</p>
+    </span>
+  </div>
+
+</section>
+
+<section id = "classtimetable">
+  <div class ="container">
+  <h1>Class Timetable</h1>
+    <table>
+      <tr>
+        <th>Module code</th>
+        <th>Module title</th>
+        <th>Weekday and time</th>
+        <th>Delievery method</th>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?keyword=cs2011&srcdb=2022">CS2011</a></td>
+        <td>Programming</td>
+        <td>Monday 10AM</td>
+        <td>In person WGB_G09</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?keyword=cs2512&srcdb=2022">CS2512</a></td>
+        <td>Authoring</td>
+        <td>Monday 12PM</td>
+        <td>In person WGB_G02</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?keyword=ap2046&srcdb=2022">AP2046</a></td>
+        <td>Statisical Analysis</td>
+        <td>Monday 2PM</td>
+        <td>In person Elect_L1</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?keyword=ap2044&srcdb=2022">AP2044</a></td>
+        <td>Applied Cognition</td>
+        <td>Monday 4PM</td>
+        <td>In person Boole_2</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2022&code=CS2012">CS2012</a></td>
+        <td>Web Development</td>
+        <td>Tuesday 12PM</td>
+        <td>In person WGB_G09</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2022&code=CS2012">CS2012</a></td>
+        <td>Web Development</td>
+        <td>Wednesday 12PM</td>
+        <td>In person WGB_G16</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?keyword=ap2045&srcdb=2022">AP2045</a></td>
+        <td>Psych. of Childhood & Ad.</td>
+        <td>Wednesday 3PM</td>
+        <td>In person WGB_G03</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?keyword=cs2011&srcdb=2022">CS2011</a></td>
+        <td>Programming</td>
+        <td>Thursday 12PM</td>
+        <td>In person WGB_402</td>
+      </tr>
+    </table>
+  </div>
+  </section>
+
+  <section id ="labtimetable">
+    <div class = "container">
+    <h1>Lab Timetable</h1>
+    <table>
+      <tr>
+        <th> Module code</th>
+        <th>Module title</th>
+        <th>Weekday and time</th>
+        <th>Delievery method</th>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?details&srcdb=2022&code=CS2012">CS2012</a></td>
+        <td>Web Development</td>
+        <td>Wednesday 11AM</td>
+        <td>In person WGB_1.10</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?keyword=cs2512&srcdb=2022">CS2512</a></td>
+        <td>Authoring</td>
+        <td>Wednesday 1PM</td>
+        <td>In person WGB_1.15</td>
+      </tr>
+      <tr>
+        <td><a href="https://ucc-ie-public.courseleaf.com/modules/?keyword=cs2011&srcdb=2022">CS2011</a></td>
+        <td>Programming</td>
+        <td>Thursday 1PM</td>
+        <td>In person WGB_G24</td>
+      </tr>
+    </table>
+    </div>
+  </section>
+
+    <section id="homephoto">
+      <div class="container">
+        <h1>Home Photo</h1>
+        <img src="img_cork.png" alt="Cork" width="500" height="auto" hspace="50">
+        <span class ="emph">
+        <p> Here you see a lovely picture of Cork City! The River Lee runs through the city.</p>
+          </span>
+      </div>
+    </section>
+
+
+    <section id="otherphoto">
+      <div class="container">
+        <h1>Other Photo</h1>
+        <img src="img_park.png" alt="Park" width="500" height="auto" hspace="50">
+        <span class ="emph">
+        <p> Here you see a lovely picture of Fitzgeralds Park! There is a fountain, lots of greenery and beautiful scenery.</p>
+          </span>
+    </div>
+  </section>
+
+
+</body>
+</html>
